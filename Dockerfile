@@ -1,3 +1,4 @@
 FROM node:10.14.2-alpine
 
-RUN apk update && apk add bash
+RUN apk add --no-cache bash
+RUN apk add --update --no-cache openssh sshpass
